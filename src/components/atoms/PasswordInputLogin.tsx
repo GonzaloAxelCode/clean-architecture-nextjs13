@@ -1,12 +1,7 @@
-
-
 interface Props {
-    name: string
+  name: string;
 }
 
-export const Input = ({
-    name,
-    ...args
-}: Props) => {
-    return <input name={name} type="password" {...args} />
-}
+export const Input = ({ name, ...args }: Props) => {
+  return <input name={name} type="password" {...args} />;
+};

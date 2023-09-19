@@ -5,10 +5,7 @@ export const UserEmptyState: User = {
   name: "",
 };
 
-const createReducer = <UserEmptyState>(
-  state: UserEmptyState,
-  action: { payload: UserEmptyState }
-) => ({
+const createReducer = (state: User, action: { payload: User }) => ({
   ...state,
   ...action.payload,
 });
@@ -22,6 +19,7 @@ export const userSlice = createSlice({
     resetUser: () => UserEmptyState,
   },
 });
+export const userReducer = userSlice.reducer;
 
 export const { createUser, modifyUser, resetUser } = userSlice.actions;
 
