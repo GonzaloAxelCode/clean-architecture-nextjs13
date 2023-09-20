@@ -1,5 +1,5 @@
-import { UIContext, UIContextType } from "@/contexts";
 import { useContext } from "react";
+import { UIContext, UIContextType } from "../contexts/UIContext";
 
 export function useUIContext(): UIContextType {
   const context = useContext(UIContext);

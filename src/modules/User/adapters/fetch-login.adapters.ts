@@ -1,4 +1,4 @@
-import { EndpointUser, User } from "@/models/user.models";
+import { EndpointUser, User } from "@/modules/User/models/user.models";
 
 export const createAdapter = (user: EndpointUser) => {
   const formatedUser: User = {
